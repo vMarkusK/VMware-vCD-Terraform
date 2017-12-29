@@ -11,6 +11,10 @@
 # Workingdir
 .terraform
 
+# State
+*.tfstate
+*.tfstate.*
+
 # =========================
 # Operating System Files
 # =========================
