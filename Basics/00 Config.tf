@@ -15,7 +15,7 @@ variable "vcd_vdc" {
    description = "vCD Tenant VDC"
 }
 variable "vcd_max_retry_timeout" {
-   description = "vCD Tenant VDC"
+   description = "Retry Timeout"
    default = "240"
 }
 
