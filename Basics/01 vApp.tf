@@ -13,7 +13,4 @@ resource "vcd_vapp" "tf-vapp" {
 
   network_name = "${vcd_network.tf-net.name}"
 
-  ovf {
-    hostname = "tf-vapp"
-  }
 }
