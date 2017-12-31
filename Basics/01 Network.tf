@@ -9,6 +9,11 @@ resource "vcd_network" "tf-net" {
   edge_gateway = "${var.vcd_edge}"
   gateway      = "172.20.0.1"
 
+  dhcp_pool {
+    start_address = "172.20.0.10"
+    end_address   = "172.20.0.50"
+  }
+
   static_ip_pool {
     start_address = "172.20.0.100"
     end_address   = "172.20.0.200"
