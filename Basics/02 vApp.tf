@@ -36,3 +36,20 @@ resource "vcd_vapp_vm" "tf-vapp-add-2" {
 
   ip           = "172.20.0.101"
 }
+
+resource "vcd_vapp" "tf-vapp-neu" {
+  name          = "tf-vapp-neu"
+  network_name = "${vcd_network.tf-net.name}"
+
+}
+
+resource "vcd_vapp_vm" "tf-vapp-neu-add-1" {
+  vapp_name     = "${vcd_vapp.tf-vapp.name}"
+  name          = "tf-vapp-neu-add-1"
+  catalog_name  = "${var.vcd_catalog}"
+  template_name = "Ubuntu 16.04 LTS"
+  memory        = 2048
+  cpus          = 1
+
+  ip           = "172.20.0.110"
+}
