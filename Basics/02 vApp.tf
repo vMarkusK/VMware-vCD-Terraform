@@ -44,12 +44,13 @@ resource "vcd_vapp" "tf-vapp-neu" {
 }
 
 resource "vcd_vapp_vm" "tf-vapp-neu-add-1" {
-  vapp_name     = "${vcd_vapp.tf-vapp.name}"
+  vapp_name     = "${vcd_vapp.tf-vapp-neu.name}"
   name          = "tf-vapp-neu-add-1"
   catalog_name  = "${var.vcd_catalog}"
   template_name = "Ubuntu 16.04 LTS"
   memory        = 2048
   cpus          = 1
 
+  network_name = "${vcd_network.tf-net.name}"
   ip           = "172.20.0.110"
 }
