@@ -15,6 +15,6 @@ MY CLOUD-(R)EVOLUTION [mycloudrevolution.com](http://mycloudrevolution.com/)
 
 ## Project Details
 
-![terraform vcd logo](/Media/terraform vcd logo.png)
+![terraform vcd logo](/Media/terraform-vcd-logo.png)
 
 This Repository contains my Study Examples to get started with VMware vCloud Director Provider for [Terraform](https://www.terraform.io).
